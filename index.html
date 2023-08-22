@@ -12,13 +12,16 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500&family=Montserrat:wght@100;400;500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://kit.fontawesome.com/dce092592a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="main_logo.jpg"/></a>
+            <img src="images/main_logo.jpg"/></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
 <span class="navbar-toggler-icon" ></span>
         </button>
@@ -35,6 +38,12 @@
                 <li class="nav-item"><a class="nav-link" href="#">Realizacje</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
             </ul>
+            <div class="search-container">
+                <form>
+                    <a class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </form>
+            </div>
+         
         </div>
                 
     </div>
@@ -54,13 +63,13 @@
       <div class="slider container">
         <div class="slides">
         <div class="slide">
-            <img src="slide1.jfif" class=" img-fluid" />
+            <img src="images/slide1.jfif" class=" img-fluid" />
         </div>
         <div class="slide">
-            <img src="slide1.jfif" class=" img-fluid" />
+            <img src="images/project8.jpg" class=" img-fluid" />
         </div>
         <div class="slide">
-            <img src="Photo.jpg" class=" img-fluid" />
+            <img src="images/about_us.jpg" class=" img-fluid" />
         </div>
     </div>
        <button class="prevButton"><i class="fa-solid fa-arrow-left"></i></button>
@@ -85,7 +94,7 @@
 <div class="row offers">
 <div class="col-md-4 mb-4">
     <div class="offer-box">
-        <a class="icon">  <img src="Pen.png" alt="Pen"></a>
+        <a class="icon">  <img src="images/Pen.png" alt="Pen"></a>
         <h4>Projekty</h4>
         <p class="pb-5">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
         <div>
@@ -96,7 +105,7 @@
 </div>
 <div class="col-md-4 mb-4">
     <div class="offer-box">
-        <a class="icon">  <img src="Eye.png" alt="Eye"></a>
+        <a class="icon">  <img src="images/Eye.png" alt="Eye"></a>
         <h4>Wizualizacje</h4>
         <p class="pb-5">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
        <div>
@@ -106,7 +115,7 @@
 </div>
 <div class="col-md-4 mb-4">
     <div class="offer-box">
-        <a class="icon">  <img src="Star.png" alt="Star"></a>
+        <a class="icon">  <img src="images/Star.png" alt="Star"></a>
         <h4>Realizacje</h4>
         <p class="pb-5">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>  
        <div>
@@ -145,57 +154,114 @@
 </div>
 <div class="image-gallery">
     <div class="gallery-item">
-        <img src="Photo9.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo8.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo7.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo4.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo5.jpg">
-    </div>
-
-    <div class="gallery-item">
-        <img src="Photo2.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo3.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo1.jpg">
-    </div>
-    <div class="loading">
-        <button class="btn load-btn" onclick="loadMore()">Rozwiń</button>
-    </div>
-<div class="gallery-hidden" id="expanded">
-    <div class="gallery-item">
-        <img src="Photo9.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo8.jpg">
-    </div>
-    <div class="gallery-item">
-        <img src="Photo7.jpg">
-    </div>  
-
-</div>
-</div>
-
-
-
-
-
-
-
+        <a data-fancybox="gallery" href="images/project8.jpg">
+            <img src="images/project8.jpg">
+        </a>
  
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project5.jpg">
+            <img src="images/project5.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project2.jpg">
+            <img src="images/project2.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project7.jpg">
+            <img src="images/project7.jpg">
+        </a>
+    </div>
+ 
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project4.jpg">
+            <img src="images/project4.jpg">
+        </a>
+    </div>
+   
+    <div class="gallery-item d-flex justify-content-center">
+        <a data-fancybox="gallery" href="images/project1.jfif">
+            <img src="images/project1.jfif">
+        </a>
+        <div class="loading">
+            <button class="btn load-btn load_more" onclick="loadMore()" id="moreBtn">Rozwiń <i class="fa-solid fa-arrow-down"></i></button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project6.jpg">
+            <img src="images/project6.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project3.jpg">
+            <img src="images/project3.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project1.jpg">
+            <img src="images/project1.jpg">
+        </a>
+    </div>
+  
+</div>
+<div class="gallery-hidden" id="expanded">
+   
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project7.jpg">
+            <img src="images/project7.jpg">
+        </a>
+    </div>
+ 
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project4.jpg">
+            <img src="images/project4.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+           <a data-fancybox="gallery" href="images/project1.jfif">
+            <img src="images/project1.jfif">
+        </a>
+     
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project8.jpg">
+            <img src="images/project8.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project5.jpg">
+            <img src="images/project5.jpg">
+        </a>
+    </div>
+    <div class="gallery-item d-flex justify-content-center">
+        <a data-fancybox="gallery" href="images/project2.jpg">
+            <img src="images/project2.jpg">
+        </a>
+        <div class="loading">
+            <button class="btn load-btn" onclick="loadLess()" id="lessBtn">Rozwiń <i class="fa-solid fa-arrow-up"></i></button>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project6.jpg">
+            <img src="images/project6.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project3.jpg">
+            <img src="images/project3.jpg">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a data-fancybox="gallery" href="images/project1.jpg">
+            <img src="images/project1.jpg">
+        </a>
+    </div>
+  
+ 
+</div>
+
 </section>
 <section id="contact">
     <div class="container">
@@ -218,8 +284,8 @@
 <footer>
 <div class="container">
     <div class="row">
-        <div class="col-md-7">
-        <a href="#"><img src="footer_logo.jpg"></a>
+        <div class="col-md-7 d-flex align-items-center">
+        <a href="#"><img src="images/footer_logo.jpg"></a>
     </div>
 <div class="col-md-5 subscribe text-md-end">
 <div>Daj znać, co możemy dla Ciebie zrobić!</div>
@@ -243,38 +309,11 @@
 </div>
 <div class="footer-bottom">
 <p>Prawa zastrzeżone © 2022</p>
-<p>made by <img src="logo.svg"/></p>
+<p>made by <img src="images/logo.svg"/></p>
 </div>
 </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script>
-function loadMore(){
-    const expand=document.getElementById('expanded')
-    expand.classList.toggle('expanded')
-}
-const slides=document.querySelector('.slides')
-const prevButton= document.querySelector('.prevButton');
-const nextButton= document.querySelector('.nextButton')
-const slideWidth=document.querySelector('.slide').offsetWidth;
-let currentSlide=0;
-
-prevButton.addEventListener('click',()=>{
-if(currentSlide>0){
-    currentSlide--;
-    updateSlide();
-}
-})
-nextButton.addEventListener('click',()=>{
-if(currentSlide<slides.children.length-1){
-    currentSlide++;
-    updateSlide();
-}
-})
-function updateSlide(){
-    slides.style.transform=`translateX(-${currentSlide*slideWidth}px)`
-}
-</script>
-
+<script src="main.js"></script>
 </body>
 </html>
