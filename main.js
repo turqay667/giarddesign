@@ -1,5 +1,4 @@
 const moreBtn=document.getElementById('moreBtn')
-
 function loadMore(){
     const expand=document.getElementById('expanded')
     expand.classList.add('expanded')
@@ -14,7 +13,6 @@ function loadLess(){
   
 
 }
-
 
 const slides=document.querySelector('.slides')
 const prevButton= document.querySelector('.prevButton');

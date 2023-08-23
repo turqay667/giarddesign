@@ -43,8 +43,8 @@ span{
 }
 .search-icon{
     cursor: pointer;
+    padding-left:20px;
 }
-
 #home{
     background: #DCC1AB;
     position: relative;
